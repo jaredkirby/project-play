@@ -1,11 +1,17 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { InputWithButton } from '@/components/InputWithButton/InputWithButton';
 
 export default function HomePage() {
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        transform: 'translateY(-400px)',
+      }}
+    >
+      <InputWithButton />
+    </div>
   );
 }
